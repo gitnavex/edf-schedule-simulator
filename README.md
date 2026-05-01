@@ -63,16 +63,3 @@ die Gesamtauslastung 100% nicht ueberschreitet: sum(wcet_i / period_i) <= 1.0
                      task_done() -> waitset (WAITING)
                                        | nach einer Periode
                                     task_respawn() -> taskset (READY)
-
-## Beispielausgabe
-
-[EDF] Aufnahmetest: U_aktuell=0.000  U_neu=0.333  U_gesamt=0.333  PLANBAR
-[EDF] Task 0 erstellt  (arrival=0  wcet=4  period=12  deadline=12)
-t=0 : T0 laeuft (Deadline: 12, verbleibend: 3)
-t=1 : T0 laeuft (Deadline: 12, verbleibend: 2)
-...
-=== Scheduling Statistik ===
-Utilization : U=1.000
-T0 : tr=2.888, Deadline eingehalten
-T1 : tr=1.500, Deadline eingehalten
-Deadline-Verletzungen: 0
